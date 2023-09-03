@@ -7,7 +7,7 @@ The required packages can be found in the deepdof-se.yml file. One can also dire
 The training, validation, and testing set used for the EDOF network can be found at https://zenodo.org/record/3922596
 
 #### One network EDOF
-Uses a single U-net to deconvolve the coded blurred image. Faster to train than the dual U-net version. Contains the following files:
+Uses a single U-net to deconvolve the coded blurred image. Faster to train than the dual U-net version. To use the code, change the file paths at the beginning of each file. Contains the following files:
 * **MuseEDOF_cubic_RGB_sep_step1.py**: trains the U-net with a cubic phase mask
 * **MuseEDOF_cubic_RGB_sep_step2.py**: trains both the U-et and the phase mask jointly
 * **Network_RGB.py**: U-net
@@ -16,7 +16,7 @@ Uses a single U-net to deconvolve the coded blurred image. Faster to train than 
 * **zernike_basis_150mm.mat**: contains the Zernike basis of the mask
 
 #### Dual network EDOF
-Uses a U-net for each fluorescence dye channel. Higher reconstruction quality. Training code to come soon. Contains the following files:
+Uses a U-net for each fluorescence dye channel. Higher reconstruction quality. Training code to come soon. To use the code, change the file paths at the beginning of each file. Contains the following files:
 * **dualunet_reconstruct.py**: Reconstruct captured coded-blurred image after the network is trained and fine-tuned
 * **Network_c1.py**: 1 of the 2 U-net
 * **Network_c2.py**: 1 of the 2 U-net
