@@ -30,5 +30,5 @@ Uses a U-net for each fluorescence dye channel. Higher reconstruction quality. T
 ## Virtual staining network
 The [CycleGAN](https://junyanz.github.io/CycleGAN/) virtual staining network is based on the Tensorflow implementation by Harry Yang [link](https://github.com/leehomyc/cyclegan-1). We will post the code we use soon.
 
-## Virtual staining dataset
+### Virtual staining dataset
 This data set contains patient data and is available upon reasonable request. Please contact the corresponding authors Ashok Veeraraghavan or Rebecca Richards-Kortum. 
