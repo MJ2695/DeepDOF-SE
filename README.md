@@ -28,7 +28,14 @@ Uses a U-net for each fluorescence dye channel. Higher reconstruction quality. T
 * **zernike_basis_150mm.mat**: contains the Zernike basis of the mask
 
 ## Virtual staining network
-The [CycleGAN](https://junyanz.github.io/CycleGAN/) virtual staining network is based on the Tensorflow implementation by Harry Yang [link](https://github.com/leehomyc/cyclegan-1). We will post the code we use soon.
+The [CycleGAN](https://junyanz.github.io/CycleGAN/) virtual staining network is based on the Tensorflow implementation by Harry Yang [link](https://github.com/leehomyc/cyclegan-1). Contains the following files:
+* **cyclegan_step1.ipynb**: step 1 of the cycleGAN training. Assumes the data has paired images (fluorescence & Beer-Lambert virtual staining)
+* **cyclegan_step2.ipynb**: step 2 of the cycleGAN training. Assumes the data has unpaired images (fluorescence & FFPE H&E)
+* **image_preprocess.py**: contains utility functions that preprocess the images (e.g. normalization)
+* **network_losses.py**: contains the functions that compute different loss terms (e.g. identity loss)
+* **resnet_network.py**: contains the resnet class
+* **testcode_folder.ipynb**: code that performs virtual staining after the network is trained.
 
+ 
 ### Virtual staining dataset
 This data set contains patient data and is available upon reasonable request. Please contact the corresponding authors Ashok Veeraraghavan or Rebecca Richards-Kortum. 
